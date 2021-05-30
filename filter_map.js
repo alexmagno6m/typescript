@@ -17,4 +17,22 @@ var list_4 = new_a.filter(mayors);
 console.log(list_4);
 var list_5 = new_a.filter(function (x) { return x > 3; });
 console.log(list_5);
+var my_str = 'k ase';
+var user = ['alex', 'bibiana', 'carlos'];
+var complet_users = user.map(function (x) { return x + '@gmail.com'; });
+function email(x) {
+    return x + '@gmail.com';
+}
+var complet_users2 = user.map(email);
+console.log(complet_users);
+console.log(complet_users2);
+//reduce function with arrow flat
+var sum = new_a.reduce(function (x, y) { return x + y; });
+console.log(sum);
+//reduce function with traditional statement
+function sum2(x, y) {
+    return x + y;
+}
+var sum3 = new_a.reduce(sum2);
+console.log(sum3);
 //# sourceMappingURL=filter_map.js.map
